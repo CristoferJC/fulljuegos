@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Full Juegos</title>
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="src/css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="Full Juegos Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.php">Catálogo</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p class="subtitle">Estamos aquí para ayudarte</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="icon">📍</div>
+                            <h3>Ubicación</h3>
+                            <p>Ancud, Chile</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">📧</div>
+                            <h3>Email</h3>
+                            <p>isaiasjeldescalisto@gmail.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon">📱</div>
+                            <h3>Teléfono</h3>
+                            <p>+56 9 4912 9304</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="nombre" required>
+                            <label for="nombre">Nombre completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Correo electrónico</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="asunto" required>
+                            <label for="asunto">Asunto</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" required></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Acerca de Full Juegos</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                        <li><a href="politica.html">Política de devoluciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Full Juegos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/year.js"></script>
+</body>
+</html>

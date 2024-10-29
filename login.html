@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Full Juegos</title>
+    <link rel="stylesheet" href="src/css/login.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <div class="login-container">
+        <form action="login.php" method="POST" class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <div class="form-group">
+                <input type="text" name="username" required>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" required>
+                <label>Contraseña</label>
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <a class="back-link" href="index.html">Regresar</a>
+    </div>
+</body>
+</html>

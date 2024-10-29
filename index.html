@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Full Juegos</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.jpg" alt="Full Juegos Logo">
+            </div>
+            
+            <div class="search-container">
+                <form class="search-form" onsubmit="return false;">
+                    <input type="search" id="searchInput" placeholder="Buscar juegos...">
+                </form>
+                <div id="resultados-busqueda" class="resultados-busqueda"></div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.php">Catálogo</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="featured-games">
+            <div class="container">
+                <h2>Juegos Destacados</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <img src="assets/images/juegos/wukong.jpg" alt="Black Myth: Wukong">
+                        <div class="game-info">
+                            <h3>Black Myth: Wukong</h3>
+                            <p class="game-price">52.776 CLP</p>
+                            <a href="comprar.html"><button class="buy-button">Comprar</button></a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/images/juegos/dragonballsparking.avif" alt="DRAGON BALL: Sparking! ZERO">
+                        <div class="game-info">
+                            <h3>DRAGON BALL: Sparking! ZERO</h3>
+                            <p class="game-price">63.194 CLP</p>
+                            <a href="comprar.html"><button class="buy-button">Comprar</button></a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/images/juegos/gta5premium.jpeg" alt="Grand Theft Auto V: Edición Online Premium">
+                        <div class="game-info">
+                            <h3>Grand Theft Auto V: Edición Online Premium</h3>
+                            <p class="game-price">11.704 CLP</p>
+                            <a href="comprar.html"><button class="buy-button">Comprar</button></a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="assets/images/juegos/minecraftjava.webp" alt="Minecraft: Java & Bedrock Edition (PC)">
+                        <div class="game-info">
+                            <h3>Minecraft: Java & Bedrock Edition (PC)</h3>
+                            <p class="game-price">17.613 CLP</p>
+                            <a href="comprar.html"><button class="buy-button">Comprar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Acerca de Full Juegos</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                        <li><a href="politica.html">Política de devoluciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Full Juegos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/year.js"></script>
+    <script src="src/js/search-index.js"></script>
+</body>
+</html>
